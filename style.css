@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #1f2937;
+}
+/* Don't want to make the navbar class the container since it only contains one div. Used container-nav class instead so that the logo and ul elements would be the flex child elements */
+.container-nav {
+  margin: 0 auto;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: x-large;
+  font-weight: bolder;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin: 6px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}
+
+a:hover {
+  color: aqua;
+}
