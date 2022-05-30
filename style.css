@@ -1,16 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
 }
 
 .navbar {
   background: #1f2937;
 }
 /* Don't want to make the navbar class the container since it only contains one div. Used container-nav class instead so that the logo and ul elements would be the flex child elements */
+
 .container-nav {
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 12px;
   display: flex;
@@ -30,7 +44,7 @@ ul {
 }
 
 li {
-  margin: 6px;
+  margin: 12px;
   padding: 0;
 }
 
@@ -42,4 +56,70 @@ a {
 
 a:hover {
   color: aqua;
+}
+
+.header {
+  background: #1f2937;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.header h1 {
+  font-weight: bolder;
+  color: #f9faf8;
+  font-size: 48px;
+}
+
+.header p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.header img {
+  max-width: 1200px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #3882f6;
+  border: none;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1;
+  margin: 25px 10px;
+  padding: 15px 20px;
+  background: transparent;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 8px;
 }
