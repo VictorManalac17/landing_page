@@ -104,22 +104,53 @@ button {
   cursor: pointer;
 }
 
+.boxes {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
 .button1 {
   border-radius: 8px;
 }
 
 .boxes .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: row;
+}
+
+.boxes h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
 }
 
 .box {
-  flex: 1;
-  margin: 25px 10px;
-  padding: 15px 20px;
-  background: transparent;
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
-  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+  margin: 32px;
+}
+
+.quote {
+  background: #e5e7eb;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.quote .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thor {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
 }
